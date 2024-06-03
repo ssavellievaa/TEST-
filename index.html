@@ -15,7 +15,7 @@
 				<div class="header__location">
 					Нижний Новгород
 				</div>
-				<nav class="nav header__nav">
+				<nav class="nav header__nav" aria-label="Главное меню">
 					<ul class="nav__list list-reset">
 						<li class="nav__item">
 							<a href="#" class="nav__link">Как заказать</a>
@@ -557,10 +557,82 @@
 							</clipPath>
 							</defs>
 						</svg>	
+					</a>
 				</div>
 			</div>
 		</section>
 	</main>
+	<footer class="footer">
+		<div class="container footer__container">
+			<div class="footer__top">
+				<p class="footer__subtitle">Сайт рыбатекст поможет дизайнеру, верстальщику</p>
+				<p class="footer__subdescr">Оставьте заявку и&nbsp;мы&nbsp;пришлем вам ссылку</p>
+				<form class="footer__form form" name="form" method="POST" novalidate>
+					<input class="form__input form__input-name" type="text" id="name" name="name" placeholder="Ваше имя" required pattern="^[a-zA-Zа-яА-ЯЁё\s\-]+$"
+					data-error-message="Разрешены символы латиницы, кириллицы, знаки дефиса и пробелы.">
+					<input class="form__input form__input-phone" type="tel" name="phone" placeholder="Ваш телефон" required>
+					<input class="form__input form__input-mail" type="email" id="email" name="e-mail" placeholder="Ваша почта" required>
+					<button class="btn-reset form__btn" type="submit">Подписаться</button>
+				</form>
+			</div>
+			<div class="footer__bottom">
+				<div class="footer__link">
+					<div class="footer__link-left">
+						<ul class="list-reset footer__list">
+							<li class="footer__item">
+							 <a class="footer__item-link" href="#">О нас</a>
+							</li>
+							<li class="footer__item">
+							 <a class="footer__item-link" href="#">Как сделать заказ</a>
+							</li>
+							<li class="footer__item">
+							 <a class="footer__item-link" href="#">Доставка</a>
+							</li>
+							<li class="footer__item">
+							 <a class="footer__item-link" href="#">Гарантия</a>
+							</li>
+							<li class="footer__item">
+							 <a class="footer__item-link" href="#">Сборка</a>
+							</li>
+						</ul>
+						<a class="footer__policy" href="#">Политика конфиденциальности</a>
+						<span class="footer__text">2020, МебельХолл. Все права защищены</span>
+					</div>
+					<div class="footer__link-right">
+						<ul class="list-reset footer__list">
+							<li class="footer__item">
+							 <a class="footer__item-link" href="#">Адреса магазинов</a>
+							</li>
+							<li class="footer__item">
+							 <a class="footer__item-link" href="#">Вакансии</a>
+							</li>
+							<li class="footer__item">
+							 <a class="footer__item-link" href="#">Блог</a>
+							</li>
+							<li class="footer__item">
+							 <a class="footer__item-link" href="#">Отзывы</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__contacts">
+					<ul class="footer__social-list list-reset">
+						<li class="footer__social-item">
+							<a class="footer__social-link" href="#">Инстаграм</a>
+						 </li>
+						 <li class="footer__social-item">
+							<a class="footer__social-link" href="#">Фейсбук</a>
+						 </li>
+						 <li class="footer__social-item">
+							<a class="footer__social-link" href="#">Вконтакте</a>
+						 </li>
+					</ul>
+					<a class="footer__tel" href="tel:+73472926252">+7 (347) 292-62-52</a>
+					<a class="footer__mail" href="mailto:info@mebelhol.ru">info@mebelhol.ru</a>
+				</div>
+			</div>
+		</div>
+	</footer>
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
