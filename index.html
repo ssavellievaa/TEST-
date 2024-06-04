@@ -573,10 +573,9 @@
 			<div class="footer__top">
 				<p class="footer__subtitle">Сайт рыбатекст поможет дизайнеру, верстальщику</p>
 				<p class="footer__subdescr">Оставьте заявку и&nbsp;мы&nbsp;пришлем вам ссылку</p>
-				<form class="footer__form form" name="form" method="POST" novalidate>
-					<input class="form__input form__input-name" type="text" id="name" name="name" placeholder="Ваше имя" required pattern="^[a-zA-Zа-яА-ЯЁё\s\-]+$"
-					data-error-message="Разрешены символы латиницы, кириллицы, знаки дефиса и пробелы.">
-					<input class="form__input form__input-phone" type="tel" name="phone" placeholder="Ваш телефон" required>
+				<form class="footer__form form" name="form" method="POST">
+					<input class="form__input form__input-name" type="text" id="name" name="name" placeholder="Ваше имя" required pattern="^[a-zA-Zа-яА-ЯЁё\s\-]+$">
+					<input class="form__input form__input-phone" type="tel" name="phone" placeholder="Ваш телефон" required pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}">
 					<input class="form__input form__input-mail" type="email" id="email" name="e-mail" placeholder="Ваша почта" required>
 					<button class="btn-reset form__btn" type="submit">Подписаться</button>
 				</form>
